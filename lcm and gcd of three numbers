@@ -1,0 +1,16 @@
+import math
+a=int(input("enter the first number"))
+b=int(input("enter the second number"))
+c=int(input("enter the third number"))
+gcd1=math.gcd(a,b)
+gcd2=math .gcd(gcd1,c)
+lcm1=(a*b)//gcd1
+lcm2=(lcm1*c)//math.gcd(lcm1,c)
+print("gcd", gcd2)
+print("lcm", lcm2)
+output:
+enter first number3
+enter second number4
+enter third number6
+lcm=12
+gcd=1
