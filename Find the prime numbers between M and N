@@ -1,0 +1,15 @@
+m=int(input("enter the starting number"))
+n=int(input("enter the ending number"))
+print("prime numbers between",m,"and",n,"are")
+for num in range(m,n+1):
+    if num>1:
+        for i in range(2,num):
+            if num%i==0:
+                break
+        else:
+            print( num, end="")
+output:
+ enter the starting number 10
+ enter the ending number 20
+prime numbers between 10 and 20
+11,13,15,17,19
